@@ -10,7 +10,7 @@ chat_id = os.environ['TELEGRAM_CHAT_ID']
 bot = telegram.Bot(token=bot_token)
 
 # Get the Fear and Greed Index value
-value = fear_and_greed.get()
+value = fear_and_greed.get().value
 
 if value < 30:
     # Send a notification if the value is below 30
