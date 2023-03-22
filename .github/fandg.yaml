@@ -22,7 +22,7 @@ jobs:
           pip install fear_and_greed python-telegram-bot
 
       - name: Run bot
-        run: python your_script.py
+        run: python main.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
